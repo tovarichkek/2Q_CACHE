@@ -86,6 +86,7 @@ struct cache_t{
         return false;
     }
 
+    //print elems in protected and probationary cache in that moment
     void print_cache(){
         std::cout << "elements in caches: " << std::endl;
         std::cout << "protected cache: ";

@@ -1,5 +1,7 @@
+#include <unordered_map>
 #include "2Q.hpp"
 #include "ideal.hpp"
+
 
 int slow_get_page(int key){
     return key;
@@ -26,10 +28,9 @@ int main(){
     }
     
 
-    std::cout << hits << std::endl;
+    std::cout << "hits : " << hits << std::endl;
 
-    //uncomment bottom line to see hits with ideal cache
-//    std::cout <<  ideal_cache_hits(&keys, cache_size) << std::endl;
+    std::cout << "ideal_cache hits: " << ideal_cache_hits(&keys, cache_size) << std::endl;
     
 
 
